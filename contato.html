@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Menu</title>
+</head>
+
+<body id="main">
+    <!--Criação da classe "menu", a qual será usada para criar o menu padrão que estará presente em todas as páginas-->
+    <div class="menu contato">
+        <ul>
+            <li><a href="menu.html">Sobre mim</a></li>
+            <li><a href="conhecimentos.html">Conhecimentos</a></li>
+            <li><a href="outros.html">Outros trabalhos</a></li>
+            <li><a href="contato.html" class="realce">Contato</a></li>
+        </ul>
+    </div>
+    <div class="principal">
+        <div class="deixe-msg">
+            <h1>Deixe sua mensagem!!!</h1>
+            <form action="">
+                <!--Formulário criado com elementos input e buttom, nele temos o Placeholder para manter uma informação visível enquanto o elemento não é selcionado. Também foram dados nomes aos elementos para criar uma função que será utilizada através do JavaScript-->
+                <input type="text" name="nome" placeholder="Nome">
+                <input type="text" name="email" placeholder="email@dominio.com">
+                <textarea name="" id="" cols="30" rows="10"
+                    placeholder="Não precisa ter medo, os dados de nome, email e texto são meramente ilustrativos mas fazem algo se você os preencher"></textarea>
+                <button onclick="msg('nome','email')">Enviar</button>
+            </form>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
