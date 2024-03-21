@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <script>
+    
+    </script>
+  
+
+</head>
+<body>
+    <h1>Lista de tarefas</h1>
+    <form action="">
+
+    <label for="tarefa">   
+        Adicionar tarefa
+    </label> 
+        <input type="text" id="tarefa" name="tarefa">
+
+        <button type="button" onclick="adicionarTarefa()">Adicionar</button>
+
+    
+    </form>  
+    <ul id="lista-de-tarefas"></ul>
+
+    <script>
+        function adicionarTarefa(){
+            //Receber as informações digitadas no input de texto
+            let campoTarefa = document.getElementById("tarefa");
+            let listaDeTarefas= document.getElementById("lista-de-tarefas");
+
+            //Criação de um novo elemento <li> com o texto da tarefa e adicionar a lista
+            let novaTarefa=document.createElement("li");
+            novaTarefa.textContent=campoTarefa.value;
+            listaDeTarefas.appendChild(novaTarefa);
+
+            //Limpeza do campo de texto para a proxima tarefa
+
+            campoTarefa.value="";
+
+        }
+    </script>
+  
+</body>
+</html>

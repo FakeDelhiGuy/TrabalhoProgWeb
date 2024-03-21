@@ -110,6 +110,7 @@ ul a {
     height: 650px;
     box-sizing: border-box;
     display: flex;
+
     
 }
 /* Início da estilização nas páginas a serem exibidas*/
@@ -132,34 +133,28 @@ ul a {
 h1 {
     font-size: 2em;
     margin-top: -10px;
+   
 }
 .grid{
-    font-size: 20px;
-    color: white;
-    width: 70%;
-    margin: auto;
-    text-align: center;
-    margin-top: 30%;
-    background: #5c5b5b50;
-    border-radius: 30px;
-
+    width: 200px;
+    height: 200px;
+    margin: 150px 55px;
+    border: solid 0.01px rgb(150, 149, 149);
+    border-radius: 20px;
     transition: 0.5s;
+    text-align: center;
 
 }
 .grid img{
     width: 60%;
-    margin: auto;
+    margin: 10px auto;
     display: block;
 
 }
 .principal a{
     text-decoration: none;
 }
-.grid:hover{
-    width: 80%;
-    font-size: 25px;
-    transition: 0.5s;
-}
+
 .deixe-msg{
     width: 100%;
     text-align: center;
